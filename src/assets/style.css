@@ -1,0 +1,247 @@
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700&family=Special+Elite&display=swap');
+
+/* globals */
+
+:root {
+  --font-primary: 'Inter', monospace;
+  --font-secondary: 'Special Elite', cursive;
+  --color-paper: #f2eecb;
+  --color-lead: #5C6174;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  font-family: var(--font-primary), system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* background-color: white; */
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+
+
+  
+}
+
+body {
+  min-height: 100vh; /* This makes the body always at least as tall as the viewport */
+}
+
+.homepage {
+  flex-grow: 1; /* This makes the main content area "grow" to take up all the space that's not taken by the navbar and footer */
+  position: absolute; 
+}
+
+
+
+.logo {
+  width:80px;
+  height: 80px;
+  will-change: filter;
+  transition: filter 300ms;
+  border-radius: 20px;
+
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #E0C9A6 );
+}
+
+/* NAVBAR STYLING STARTS */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+
+  color: #fff;
+}
+
+/* LOGO */
+.logo {
+  font-size: 32px;
+}
+
+/* NAVBAR MENU */
+
+.nav--list {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+  font-family: var(--font-primary);
+  font-size: 18px;
+  color: var(--color-lead);
+  font-weight: bold;
+}
+
+/* TEXT AND IMAGE ALIGNMENT */
+
+.main--pic {
+  width: 540px;
+  height: 640px;
+  border-radius: 20px;
+  margin: 2% 5% 2%;
+
+}
+.container--about {
+  display:flex;
+  justify-content: space-around;
+
+}
+
+.container--text {
+  text-align: justify;
+  display:flex;
+  flex-direction: column; 
+  justify-content:space-evenly;
+  margin-top: 1%;
+  margin-right: 5%;
+
+}
+
+p.main--intro {
+  font-family: var(--font-secondary), sans-serif, Arial, Helvetica;
+  font-size: 20px;
+  line-height: 1.25;
+  margin-bottom: 5%;
+}
+
+.read--more {
+  margin-top: 0;
+}
+
+
+/* MY WRITINGS */
+.main--other h2 {
+  text-align: center;
+  margin: 2%;
+}
+
+.main--writing {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly ;
+  margin: 2%;
+}
+
+.recent--article {
+  border:1px solid black;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  grid-gap: 40px;
+  margin-top: 50px; 
+  
+}
+
+/* FOOTER  */
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+
+
+a {
+  color: black;
+}
+a:visited {
+  color: black;
+}
+
+
+
+/* MEDIA QUEROES ---RESPONSIVE */
+
+/* Responsive Images */
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Tablet devices */
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  body {
+      font-size: 18px;
+  }
+
+  .main--pic {
+    float: none;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: auto;
+    display: block;  
+    width: 80%;
+    margin: 0 auto; /* This centers the image if it's not already */
+  }
+
+  .main--about {
+      flex-direction: column;
+  }
+
+  .navbar {
+    overflow-x: auto;
+
+}
+
+.nav--list {
+    gap: 1em;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+  .main--writing {
+      flex-direction: column;
+  }
+
+  .recent--article {
+      margin-bottom: 20px;
+  }
+}
+
+/* Mobile devices */
+@media only screen and (max-width: 599px) {
+  body {
+      font-size: 16px;
+  }
+
+  .main--pic {
+    float: none;
+    align-items: center;
+    display: block;
+}
+
+  .main--about {
+      flex-direction: column;
+  }
+
+  .navbar {
+    overflow-x: auto;
+
+}
+
+.nav--list {
+    gap: 0.5em;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+
+  .main--writing {
+      flex-direction: column;
+  }
+
+  .recent--article {
+      margin-bottom: 20px;
+  }
+}
