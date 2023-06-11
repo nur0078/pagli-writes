@@ -7,6 +7,3 @@ export { default as GalleryPage } from './Gallery';
 export { default as GhazalsPage } from './Ghazals';
 
 export { default as PoemsPage  } from './Poems';
-
- 
-
