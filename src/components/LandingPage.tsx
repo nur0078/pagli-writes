@@ -23,10 +23,16 @@ const LandingPage = () => {
         {/* MONOLOGUE */}
         <div className="px-10 w-4/5 m-auto pt-20 ">
           <p className="text-2xl text-pencil  text-justify max-w-screen leading-9">
-            Consectetur culpa et eu cupidatat est eiusmod eiusmod cillum aliquip reprehenderit
-            consectetur. Consectetur culpa et eu cupidatat est eiusmod eiusmod cillum aliquip
-            reprehenderit consectetur. Consectetur culpa et eu cupidatat est eiusmod eiusmod cillum
-            aliquip reprehenderit consectetur. consectetur.
+            Hello there, I am a poet, a businesswoman, and a proud mother of two wonderful sons. As
+            a writer, I find solace in the beauty of words and the power of language, and in the
+            literature world I am also known as “Pagli”. I believe that poetry has the ability to
+            capture the essence of our emotions and experiences and convey them in a way that
+            touches the hearts of others.
+            <br />
+            Being a mother has also had a profound impact on my writing. It has taught me to see the
+            world through the eyes of my children, and to appreciate the simple joys and wonders of
+            life. I hope that my poetry can inspire others to embrace the beauty of everyday moments
+            and cherish the relationships that matter most...
           </p>
 
           {/* READ MORE BUTTON */}
