@@ -1,4 +1,3 @@
-import React from 'react';
 import Navbar from './Navbar';
 import RukuPic from '../assets/images/PoemPage/blackDress.png';
 import Footer from './Footer';

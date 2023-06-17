@@ -1,4 +1,3 @@
-import React from 'react';
 import Navbar from './Navbar';
 import CoverPic from '../assets/images/sydney.jpeg';
 import Footer from './Footer';

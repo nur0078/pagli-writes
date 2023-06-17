@@ -1,4 +1,3 @@
-import React from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import BoatPic from '../assets/images/GalleryPage/BoatXL.jpeg';
