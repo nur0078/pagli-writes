@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className=" text-center text-lg mt-auto pt-28 ">
+    <footer className=" text-center text-lg pt-28 aboslute bottom-0 ">
       <h4> Copyright &copy; 2023. Rukmini 'Pagli'. </h4>
     </footer>
   );
