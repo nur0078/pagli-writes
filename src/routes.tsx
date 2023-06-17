@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { LandingPage, AboutPage, GalleryPage, GhazalsPage, PoemsPage } from './components';
+import { LandingPage, AboutPage, GalleryPage, GhazalsPage, Poems } from './components';
 
 const BlogRoutes = () => {
   return (
@@ -9,7 +9,7 @@ const BlogRoutes = () => {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/gallery" element={<GalleryPage />} />
         <Route path="/ghazals" element={<GhazalsPage />} />
-        <Route path="/poems" element={<PoemsPage />} />
+        <Route path="/poems" element={<Poems />} />
       </Routes>
     </Router>
   );
