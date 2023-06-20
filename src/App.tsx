@@ -1,10 +1,15 @@
 import './App.css';
 import BlogRoutes from './routes';
+import Navbar from './components/Navbar';
+import React from 'react';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div>
+    <div className="flex flex-col">
+      <Navbar />
       <BlogRoutes />
+      <Footer />
     </div>
   );
 }

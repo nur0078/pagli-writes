@@ -1,11 +1,8 @@
-import Navbar from './Navbar';
 import RukuPic from '../assets/images/PoemPage/blackDress.png';
-import Footer from './Footer';
 
 const PoemPage = () => {
   return (
     <div>
-      <Navbar />
       <div className="min-h-screen relative">
         <div className="pt-20 grid grid-cols-12 gap-4 pb-8">
           <h3 className=" text-3xl col-start-6 col-span-2 pt-12 "> नींद हो गई क्यों ? </h3>
@@ -40,10 +37,6 @@ const PoemPage = () => {
             src={RukuPic}
             alt="Ruku looking pretty"
           />
-        </div>
-
-        <div className="pt-8 aboslute bottom-0 ">
-          <Footer />
         </div>
       </div>
     </div>

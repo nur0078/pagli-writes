@@ -1,11 +1,8 @@
 import Card from './Card';
-import Navbar from './Navbar';
-import Footer from './Footer';
 
 const Poem = () => {
   return (
     <div className="min-h-screen ">
-      <Navbar />
       <h3 className="text-6xl font-bold text-center pt-10"> Poems </h3>
       {/* DISPLAY GRIDS */}
       <div className="pt-20 grid grid-cols-12 gap-4 w-11/12">
@@ -22,7 +19,7 @@ const Poem = () => {
           <Card />
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

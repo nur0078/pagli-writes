@@ -1,11 +1,8 @@
-import Navbar from './Navbar';
-import Footer from './Footer';
 import Selfie from '../assets/images/GalleryPage/selfie.jpeg';
 
 const Poem = () => {
   return (
     <div className="min-h-screen ">
-      <Navbar />
       <h3 className="text-6xl font-bold text-center pt-10"> GALLERY </h3>
 
       {/* DISPLAY GRIDS */}
@@ -23,7 +20,6 @@ const Poem = () => {
           <img src={Selfie} alt="Ruku" className="rounded-xl shadow-2xl " />
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

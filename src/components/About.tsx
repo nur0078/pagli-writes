@@ -1,11 +1,8 @@
-import Navbar from './Navbar';
-import Footer from './Footer';
 import BoatPic from '../assets/images/GalleryPage/BoatXL.jpeg';
 
 const About = () => {
   return (
     <div className="container--about">
-      <Navbar />
       <div className="pt-6  w-4/5 flex flex-col items-center m-auto  ">
         <img className="rounded-full shadow-2xl h-96 pt-3" src={BoatPic} alt="Ruku in a boat" />
 
@@ -60,8 +57,6 @@ const About = () => {
           </p>
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 };
