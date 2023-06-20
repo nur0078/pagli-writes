@@ -1,7 +1,9 @@
 import CoverPic from '../assets/images/sydney.jpeg';
 import Card from './Card';
+import { Poems } from '../const/poems';
 
 const LandingPage = () => {
+  const newPoems = Poems.slice(-3, Poems.length);
   return (
     <div>
       {/* LANDING COVER */}
@@ -45,10 +47,10 @@ const LandingPage = () => {
 
       {/* POEM DISPLAY CARDS */}
       <div className="flex justify-center w-4/5 m-auto pt-16">
-        <div className="flex gap-10 max-w-full ">
-          <Card />
-          <Card />
-          <Card />
+        <div className="flex gap-20 max-w-full ">
+          {newPoems.map((poem) => {
+            return <Card poem={poem} />;
+          })}
         </div>
       </div>
 
@@ -58,10 +60,12 @@ const LandingPage = () => {
 
       {/* GHAZAL DISPLAY CARDS */}
       <div className="flex justify-center w-4/5 m-auto pt-16">
-        <div className="flex gap-10 max-w-full ">
-          <Card />
-          <Card />
-          <Card />
+        <div className="flex gap-20 max-w-full ">
+          <div className="flex gap-20 max-w-full ">
+            {newPoems.map((poem) => {
+              return <Card poem={poem} />;
+            })}
+          </div>
         </div>
       </div>
     </div>
