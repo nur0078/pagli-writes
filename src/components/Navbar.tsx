@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const Navbar = () => {
   return (
     <nav className=" shadow-md">
@@ -23,9 +25,9 @@ export default Navbar;
 
 const AnimatedHoverLink = ({ text }: { text: string }) => {
   return (
-    <a href={text == 'Home' ? '/' : `${text.toLowerCase()}`} className="text-lg group text-main ">
+    <Link to={text == 'Home' ? '/' : `/${text.toLowerCase()}`} className="text-lg group text-main ">
       {text}
       <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-pencil"></span>
-    </a>
+    </Link>
   );
 };
